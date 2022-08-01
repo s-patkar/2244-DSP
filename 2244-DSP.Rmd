@@ -1,0 +1,134 @@
+---
+author: "Shreeram Patkar"
+output:
+  html_document: default
+  pdf_document: default
+---
+# Shreeram Patkar 
+
+## Dataset: 
+Dataset #1 - Foot massage and blood pressure
+
+## Non-path specific data import sequence, package initialization
+
+```{r import, echo=TRUE}
+#install.packages("tidyverse") #UNCOMMENT TO INSTALL
+library(tidyverse)
+ogdata <- read.csv("~/dataset1.csv") # file imported from working directory
+```
+
+
+## Metadata
+### *Summary of sampling and study design characteristics*
+
+The data used in this project was collected as part of a repeated measures design study in Japan aiming
+to investigate the effects of aromatherapy foot massage on blood pressure and anxiety. 
+Data was collected from 57 Japanese adults volunteers between the age of 20 and 72 years old 
+(two of these adults dropped out). The participants were divided into two groups where they all were subjected to 
+aromatherapy and a control treatment in varying orders. Data for the following variables was collected in 
+follow-up examinations 3 times over the 8 weeks. 
+
+
+### *Variables*
+
+- participant
+  - Description: Unique number assigned to each participant as an ID (e.g. 51)
+  - Type: Categorical, Nominal
+
+- sex
+  - Description: Sex of participant, recorded as either "male" or "female"
+  - Type: Categorical, Nominal
+  
+- group
+  - Description: Treatment group assigned to participant (either "A" or "B"). Group "A" received 
+  the "intervention" treatment consisting of a 10-minute footbath, followed by a self-administered
+  45-minute foot massage three times a week for four weeks. Then they were subjected to a 
+  non-intervention treatment without any activities for four weeks. Group B underwent the 
+  same in reverse order. 
+  - Type: Categorical, Nominal
+  
+- age
+  - Description: Age of participant (in years)
+  - Type: Quantitative, Ratio, Continuous
+
+- height
+  - Description: Height of participant (measured in meters)
+  - Type: Quantitative, Ratio, Continuous
+  
+- timepoint
+  - Description: Timepoint within the 8 weeks at which the measurements were taken
+  (either "baseline", "week 4", or "week 8" )
+  - Type: Categorical, Ordinal
+  
+- weight
+  - Description: Weight of the participant (measured in kg) at the given timepoint
+  - Type: Quantitative, Ratio, Continuous
+  
+- heartrate
+  - Description: Heartrate (measured in bpm) of the participant at the given timepoint
+  - Type: Quantitative, Ratio, Discrete
+
+- sysBP_first
+  - Description: The first of two consecutive systolic blood pressure readings 
+  (separated by two deep breaths) recorded in mmHg at the given timepoint
+  - Type: Quantitative, Ratio, Continuous
+  
+- diaBP_first
+  - Description: The first of two consecutive diastolic blood pressure readings 
+  (separated by two deep breaths) recorded in mmHg at the given timepoint
+  - Type: Quantitative, Ratio, Continuous
+  
+- sysBP_second
+  - Description: The second of two consecutive systolic blood pressure readings 
+  (separated by two deep breaths) recorded in mmHg at the given timepoint
+  - Type: Quantitative, Ratio, Continuous
+  
+- diaBP_second
+  - Description: The second of two consecutive diastolic blood pressure readings 
+  (separated by two deep breaths) recorded in mmHg at the given timepoint
+  - Type: Quantitative, Ratio, Continuous
+
+- drinking
+  - Description: Whether participants regularly engaged in alcohol consumption 
+  at the given timepoint (recorded as yes/no)
+  - Type: Categorical, Nominal
+  
+- optimist
+  - Description: Whether participants consider themselves an optimist
+  at the given timepoint (recorded as yes/no)
+  - Type: Categorical, Nominal
+  
+
+  
+  
+### *Dataset Information*
+
+- Number of columns: 14
+- Number of rows: 154
+  - Row #1 represents the header names
+
+### *Import Confirmation Information*
+- Participant #16 is female, group A, 44 years of age and has a sysBP_first measurement of 
+99, 93, 98 mmHg at each timepoint chronologically.
+
+## Research Questions
+
+1) How does the age (explanatory, quantitative) and sex (explanatory, categorical) 
+of the participant affect their first baseline blood pressure reading (response, quantitative)?
+
+2) What is the mean blood pressure of the Japanese, male population in good cardiovascular health?
+
+3) Does the data support the alternative hypothesis that heartrate linearly decreases with
+age due to ventricle stiffening?
+
+## Research Questions Answers
+
+### Question 1:
+
+
+
+
+
+
+
+
